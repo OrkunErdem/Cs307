@@ -1,0 +1,16 @@
+-O  :Output-field-names
+            This option acts as a form of help for the above -o option.  It will cause top to print each of the available field names on a separate line, then quit.   Such  names  are
+            subject to NLS (National Language Support) translation.
+-pN1,N2,N3 ...
+            Monitor  only  processes  with  specified process IDs.  This option can be given up to 20 times, or you can provide a comma delimited list with up to 20 pids.  Co-mingling
+            both approaches is permitted.
+
+            A pid value of zero will be treated as the process id of the top program itself once it is running.
+
+            This is a command-line option only and should you wish to return to normal operation, it is not necessary to quit and restart top  --  just issue any of these  interactive
+            commands: `=', `u' or `U'.
+
+            The `p', `u' and `U' command-line options are mutually exclusive.
+
+       -s  :Secure-mode operation
+            Starts top with secure mode forced, even for root.  This mode is far better controlled through a system configuration file (see topic 6. FILES).
